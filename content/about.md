@@ -1,7 +1,6 @@
 ---
 title: "About"
 date: 2021-10-08T18:19:37+03:00
-draft: false
 ---
 
 ## PGP KEY
