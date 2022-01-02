@@ -1,4 +1,4 @@
-baseURL = "https://shmel.site/"
+baseURL = "https://shmel.xyz/"
 languageCode = "en-us"
 title = "IT-Shmelurity Blog"
 theme = "cactus"
@@ -78,7 +78,7 @@ weight = 4
       theme = "github-light"
     [params.comments.cactuscomments]
       #siteName = "your_cactus_comments_sitename" # see https://cactus.chat/ on how to register your site name
-      serverUrl = "https://matrix.shmelovod.ru" # Defaults to https://matrix.cactus.chat:8448 (Cactus Chat public server)
+      #serverUrl = "https://matrix.shmelovod.ru" # Defaults to https://matrix.cactus.chat:8448 (Cactus Chat public server)
       #serverName = "matrix.shmelovod.ru" # Defaults to cactus.chat
 
   # the value of name should be an valid font awesome icon name (brands type)
