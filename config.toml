@@ -1,9 +1,9 @@
 baseURL = "https://shmel.xyz/"
 languageCode = "en-us"
-title = "IT-Shmelurity Blog"
+title = "5HM3L"
 theme = "cactus"
-copyright = "IT-Shmelurity" # cactus will use title if copyright is not set
-disqusShortname = "shmel" # Used when comments is enabled. Cactus will use site title if not set
+copyright = "by 5HM3L team" # cactus will use title if copyright is not set
+disqusShortname = "5HM3L" # Used when comments is enabled. Cactus will use site title if not set
 # googleAnalytics = "UA-1234-5"
 
 
@@ -26,7 +26,7 @@ url = "/tags"
 weight = 3
 
 [[menu.main]]
-name = "About"
+name = "About Team"
 url = "/about"
 weight = 4
 
@@ -43,24 +43,24 @@ weight = 4
     lineNos = true
     lineNumbersInTable = true
     noClasses = true
-    style = "dracula"
+    style = "light"
     tabWidth = 4
 
 [params]
 
-  colortheme = "dark" # dark, light, white, or classic
+  colortheme = "light" # dark, light, white, or classic
   rss = true # generate rss feed. default value is false
   googleAnalyticsAsync = false # use asynchronous tracking. Synchronous tracking by default
   showAllPostsArchive = false # default
 
   # Home page settings
-  description = "All about IT magic."
+  description = "Official blog of the CTF 5HM3L team community"
   mainSection = "posts" # your main section
   showAllPostsOnHomePage = false # default
   postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = true # show tags overview by default.
-  showProjectsList = false # show projects list by default (if projects data file exists).
-  projectsUrl = "https://github.com/gohugoio" # title link for projects list
+  showProjectsList = true # show projects list by default (if projects data file exists).
+  projectsUrl = "https://github.com/5HM3L" # title link for projects list
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
@@ -70,22 +70,25 @@ weight = 4
   showReadTime = true # default
 
   [params.comments]
-    enabled = true # default
+    enabled = false # default
     engine = "cactus_comments" # only disqus, utterances, and cactus_comments is supported
     [params.comments.utterances]
       repo = "<github_username>/<github_reponame>"
       label = "hugo-site-name" # you can use however you want to label your name in your repo's issues
       theme = "github-light"
     [params.comments.cactuscomments]
-      #siteName = "your_cactus_comments_sitename" # see https://cactus.chat/ on how to register your site name
-      #serverUrl = "https://matrix.shmelovod.ru" # Defaults to https://matrix.cactus.chat:8448 (Cactus Chat public server)
-      #serverName = "matrix.shmelovod.ru" # Defaults to cactus.chat
+      siteName = "https://cactus.chat/" # see https://cactus.chat/ on how to register your site name
+      serverUrl = "https://matrix.cactus.chat:8448" # Defaults to https://matrix.cactus.chat:8448 (Cactus Chat public server)
+      serverName = "cactus.chat" # Defaults to cactus.chat
 
   # the value of name should be an valid font awesome icon name (brands type)
   # https://fontawesome.com/icons?d=gallery&s=brands
-  [[params.social]]
+[[params.social]]
     name = "telegram"
     link = "https://t.me/shmelovod"
 [[params.social]]
     name = "email"
     link = "5hm3l1337@gmail.com"
+[[params.social]]
+    name = "github"
+    link = "https://github.com/5HM3L"
