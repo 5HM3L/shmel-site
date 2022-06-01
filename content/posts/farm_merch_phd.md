@@ -1,6 +1,6 @@
 ---
 
-title: "farm_merch_phd"
+title: "Фарм мерча от Positive Technologies на PHD11"
 date: 2022-05-25T10:00:00+03:00
 tags:
 - PHD11
@@ -10,7 +10,7 @@ tags:
 
 # Фарм мерча от Positive Technologies на PHD11
 
-![img](https://github.com/eeenvik1/shmel-site/blob/main/content/posts/farm_merch_phd.assets/logo.png)
+![img](https://habrastorage.org/getpro/habr/upload_files/636/e8f/5d7/636e8f5d7d64503435c838365cb3aa5a.png)
 
 C 18 по 19 мая 2022 года проходил всем известный международный форум по практической безопасности [Positive Hack Days](https://phdays.com/). 
 На мероприятии как всегда были представлены различные вендоры из сферы IT, каждый из которых раздавал свои именные товары. 
@@ -35,22 +35,22 @@ C 18 по 19 мая 2022 года проходил всем известный �
 
 Оригинальный бот:
 
-![img](https://github.com/eeenvik1/shmel-site/blob/main/content/posts/farm_merch_phd.assets/Screenshot_1.png)
+![img](https://habrastorage.org/getpro/habr/upload_files/615/51c/054/61551c054875d215991aa709078cb47a.png)
 
 Созданный нами ложный бот:
 
-![img](https://github.com/eeenvik1/shmel-site/blob/main/content/posts/farm_merch_phd.assets/Screenshot_2.png)
+![img](https://habrastorage.org/r/w1560/getpro/habr/upload_files/9ce/302/ac7/9ce302ac77a1625170f21b04ad83f3a0.png)
 
 2. Начинаем проходить квиз у оригинального бота, для того, чтобы вытащить по 10 вопросов в каждой категории 
 (одну из категорий придется решить на 10/10, чтобы получить валидный ответ от бота на получение мерча).
 
 Пример вопроса:
 
-![img](https://github.com/eeenvik1/shmel-site/blob/main/content/posts/farm_merch_phd.assets/Screenshot_3.png)
+![img](https://habrastorage.org/r/w1560/getpro/habr/upload_files/1f1/9ba/22f/1f19ba22fbcf0b80ed012650dc4664db.png)
 
 Пример валидного ответа от бота:
 
-![img](https://github.com/eeenvik1/shmel-site/blob/main/content/posts/farm_merch_phd.assets/Screenshot_4.png)
+![img](https://habrastorage.org/r/w1560/getpro/habr/upload_files/68f/862/79a/68f86279a0cdf048e01237057a24f1e4.png)
 
 3. После того, как мы всё прорешали, у нас получился список из 60 вопросов и 6 ответов от бота по каждой категории. Переходим к кодингу.
 4. Реализовывать ложного бота будем через python и библиотеку `telebot`:
@@ -106,9 +106,9 @@ def callback_query(call):
 ...
 ```
 
-Не стоит забывать про ответа бота при нажатии на другие кнопки:
+Не стоит забывать про ответ бота при нажатии на другие кнопки:
 
-![img](https://github.com/eeenvik1/shmel-site/blob/main/content/posts/farm_merch_phd.assets/Screenshot_5.png)
+![img](https://habrastorage.org/r/w1560/getpro/habr/upload_files/d51/7f8/d35/d517f8d35d1e2a6ff9f806821f61ec19.png)
 
 ```python
 elif call.data == "error_1": 
@@ -117,6 +117,6 @@ elif call.data == "error_1":
 
 Как итог мы имеем аналогичного бота с "правильно решенными" вопросами:
 
-![img](https://github.com/eeenvik1/shmel-site/blob/main/content/posts/farm_merch_phd.assets/Screenshot_6.png)
+![img](https://habrastorage.org/r/w1560/getpro/habr/upload_files/c45/a41/88f/c45a4188f74d28f017476d3370e8fabf.png)
 
 P.S. автор честно прорешал 3 категории на 10 баллов (правда с разных аккаунтов) и получил только 3 приза.
