@@ -3,14 +3,20 @@ title: "About"
 date: 2021-10-08T18:19:37+03:00
 ---
 
-## CTFtime
-https://ctftime.org/team/151934
-## GitHub
+## Matrix chat
+Our self-hosted matrix instance with web-clients for decentralized communication.
+### Server
+Main server: [matrix.shmel.xyz](https://matrix.shmel.xyz)<br>
+Main 5HM3L team room: [#5hm3l_team:shmel.xyz](https://matrix.to/#/#5hm3l_team:shmel.xyz)
+### Clients
+[Element-web client](https://element.shmel.xyz)<br>
+[Hydrogen-web client (mobile)](https://hydrogen.shmel.xyz)
 
-https://github.com/5HM3L
-## PGP KEY
-
+## Contacts
+CTFtime: https://ctftime.org/team/151934 <br>
+GitHub: https://github.com/5HM3L <br>
 Mail to: 5hm3l1337@gmail.com
+### PGP KEY
 
 ```pgp
 -----BEGIN PGP PUBLIC KEY BLOCK-----

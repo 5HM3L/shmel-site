@@ -92,3 +92,6 @@ weight = 4
 [[params.social]]
     name = "github"
     link = "https://github.com/5HM3L"
+[[params.social]]
+    name = "message-dots"
+    link = "https://matrix.to/#/#5hm3l_team:shmel.xyz"
