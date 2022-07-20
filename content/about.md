@@ -7,7 +7,6 @@ date: 2021-10-08T18:19:37+03:00
 Our self-hosted matrix instance with web-clients for decentralized communication.
 ### Server
 Main server: [matrix.shmel.xyz](https://matrix.shmel.xyz)\
-Main 5HM3L team room: [#5hm3l_team:shmel.xyz](https://matrix.to/#/#5hm3l_team:shmel.xyz)
 ### Clients
 [Element-web client](https://element.shmel.xyz)\
 [Hydrogen-web client (mobile)](https://hydrogen.shmel.xyz)
