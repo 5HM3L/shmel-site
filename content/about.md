@@ -3,14 +3,6 @@ title: "About"
 date: 2021-10-08T18:19:37+03:00
 ---
 
-## Matrix chat
-Our self-hosted matrix instance with web-clients for decentralized communication.
-### Server
-Main server: [matrix.shmel.xyz](https://matrix.shmel.xyz)\
-### Clients
-[Element-web client](https://element.shmel.xyz)\
-[Hydrogen-web client (mobile)](https://hydrogen.shmel.xyz)
-
 ## Contacts
 CTFtime: https://ctftime.org/team/151934\
 GitHub: https://github.com/5HM3L\
