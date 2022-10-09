@@ -30,5 +30,5 @@ jobs:
           SOURCE: "public/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: "/var/www/shmel-site/public/"
+          TARGET: ${{ secrets.REMOTE_TARGET }}
           #EXCLUDE: "/dist/, /node_modules/"
