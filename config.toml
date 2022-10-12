@@ -1,6 +1,6 @@
 baseURL = "https://shmel.xyz/"
 languageCode = "en-us"
-title = "5HM3L"
+title = "5HM3L TEAM BLOG"
 theme = "cactus"
 copyright = "by 5HM3L team" # cactus will use title if copyright is not set
 disqusShortname = "5HM3L" # Used when comments is enabled. Cactus will use site title if not set
