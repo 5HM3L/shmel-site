@@ -1,7 +1,6 @@
 ---
 title: "Распутываясь из циклов Ansible"
 date: 2022-10-12T22:50:09+03:00
-draft: true
 tags:
 - DevOps
 - ansible
