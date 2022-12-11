@@ -4,6 +4,8 @@ date: 2021-11-20T08:40:26+03:00
 tags:
 - writeup
 - CTF
+- WEB
+- MCTF
 - favicon
 - ico
 - shodan
