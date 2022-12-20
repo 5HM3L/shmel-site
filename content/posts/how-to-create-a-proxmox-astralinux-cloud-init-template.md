@@ -43,7 +43,7 @@ tags:
 
 Интересующие нас образы я брал [отсюда](https://vault.astralinux.ru/images/alse/cloud/).
 
-![astra_vault](images/vault_astra.png)
+![astra_vault](https://habrastorage.org/r/w1560/getpro/habr/upload_files/551/b46/86f/551b4686f520728f86f6d44f152fec57.png)
 
 Заходим по ssh на наш Proxmox и качаем нужный нам образ, в моем случае - `alse-vanilla-1.7.3-cloud-max-mg8.2.1.qcow2`
 
@@ -79,14 +79,14 @@ qm template 700
 
 Шаблон готов!
 
-[template](images/pmg_template.png)
+[template](https://habrastorage.org/r/w1560/getpro/habr/upload_files/ca3/e31/ade/ca3e31ade361563ef78e97a7ea7b948d.png)
 
 ## Клонируем из шаблона полноценную VM
 
 Шаблоны нужны нам для клонирования VM, поэтому нажимаем ПКМ на созданном темплейте и выставляем мод "Full Clone".
 Назвал я свою VM `astra-test`, вы можете как угодно обозвать.
 
-![clone_template](images/clone_template.png)
+![clone_template](https://habrastorage.org/r/w1560/getpro/habr/upload_files/8d9/45b/355/8d945b355382e927d7181c220bc917ea.png)
 
 Нажимаем "Clone" и дожидаемся окончания клонирования.
 
@@ -98,7 +98,7 @@ qm template 700
 
 Для этого в разделе `Hardware` нажимаем на Hard Disk -> Disk Action -> Resize.
 
-![resize_disk](images/resize_disk.png)
+![resize_disk](https://habrastorage.org/r/w1560/getpro/habr/upload_files/f88/d6e/832/f88d6e832be9e8539e4c32f077a7cd9d.png)
 
 Указываем нужный вам размер диска и нажимаем "Resize disk". Самое главное, что система сама займет и разметит нужное пространство при загрузке.
 
@@ -106,7 +106,7 @@ qm template 700
 
 ### Настраиваем cloud-init
 
-[cloud-init_configure](images/cloud-init_configure.png)
+[cloud-init_configure](https://habrastorage.org/r/w1560/getpro/habr/upload_files/89f/c0d/e1b/89fc0de1bd7118b3cf38e0f155c7c753.png)
 
 В соответствующих полях задаем нужные нам параметры, которые мы хотим создать в системе во время запуска:
 - логин пользователя
@@ -124,7 +124,7 @@ qm template 700
 После запуска VM astra-test в статистике мы видим 2 IP-адреса: один получен от моего DHCP-сервера, второй мы задали сами.
 Такое бывает, можно отключить DHCP уже в самой ОС.
 
-![ip_status](images/ip_status.png)
+![ip_status](https://habrastorage.org/r/w1560/getpro/habr/upload_files/4c6/a1e/620/4c6a1e62090a11f60136d854417c317d.png)
 
 Пробуем подключиться по SSH к нашей VM, используя адрес и креды, которые мы указывали при настройке cloud-init в Proxmox
 
@@ -132,7 +132,7 @@ qm template 700
 ssh user@192.168.20.30
 ```
 
-![show_info](images/show_info.png)
+![show_info](https://habrastorage.org/r/w1560/getpro/habr/upload_files/1d1/3a3/fb8/1d13a3fb8af421f69ad0ec542909f7bd.png)
 
 Готово, даже hostname настроился сам, по имени виртуальной машины в Proxmox. И да, если переименовать VM, hostname изменится за вас сам.
 Теперь можно натравливать свой Terraform с Ansible на данный шаблон и создавать кластеры из большого количества виртуальных машин за считанные минуты!
