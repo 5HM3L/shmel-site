@@ -2,7 +2,7 @@ name: 'Generate and deploy'
 
 on:
   push:
-    branches: [ with-github-actions ]
+    branches: [ with-github-actions, main ]
 
 jobs:
   deploy-website:
