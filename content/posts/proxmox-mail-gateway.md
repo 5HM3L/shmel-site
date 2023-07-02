@@ -1,6 +1,10 @@
 ---
 title: "ЧудESA защиты корпоративной почты или внедрение свободных почтовых шлюзов на базе Proxmox Mail Gateway"
 date: 2022-05-30T12:06:10+03:00
+author: z0yac
+ogimage: "images/og/proxmox-mail-gateway.png"
+categories: 
+- SPAM
 tags:
 - Cisco
 - ESA
