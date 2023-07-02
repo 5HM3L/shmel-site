@@ -14,6 +14,7 @@
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
   <meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.ogimage }}">
+  <meta name="twitter:card" content="summary_large_image" />
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}
   {{ .Scratch.Set "colortheme" "white"}}
