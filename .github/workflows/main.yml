@@ -2,7 +2,7 @@ name: 'Generate and deploy'
 
 on:
   push:
-    branches: [ with-github-actions, main ]
+    branches: [ blowfish-theme, main ]
 
 jobs:
   deploy-website:
@@ -20,14 +20,14 @@ jobs:
           extended: true
 
       - name: Build Hugo
-        run: hugo --minify
+        run: hugo -s ./src --minify
 
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-rlgoDzvc -i"
-          SOURCE: "public/"
+          SOURCE: "./src/public/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}

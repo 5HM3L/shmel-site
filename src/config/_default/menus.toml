@@ -1,0 +1,29 @@
+[[main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 10
+
+[[main]]
+  name = "Categories"
+  pageRef = "categories"
+  weight = 20
+
+[[main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 20
+
+[[main]]
+  pre = "github"
+  name = "GitHub"
+  url = "https://github.com/5HM3L"
+  weight = 30
+
+[[main]]
+  identifier = "telegram"
+  pre = "telegram"
+  url = "https://t.me/shmelovod"
+  weight = 40
+
+[[footer]]
+  name = "by 5HM3L team"
