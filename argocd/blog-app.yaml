@@ -1,0 +1,22 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: shmel-blog
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/5HM3L/shmel-site'
+    path: app/blog/manifests
+    targetRevision: blowfish-theme
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: shmel-blog
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

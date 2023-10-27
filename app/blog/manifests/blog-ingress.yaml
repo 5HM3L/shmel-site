@@ -1,0 +1,27 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: shmel-blog-ingress
+  namespace: shmel-blog
+  annotations:
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "le-global-issuer"
+
+spec:
+  tls:
+  - hosts:
+    - shmel.xyz
+    secretName: shmel-blog-tls
+  rules:
+    - host: shmel.xyz
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: shmel-blog-service
+                port:
+                  number: 80

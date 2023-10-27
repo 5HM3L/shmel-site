@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: shmel-blog-service
+  namespace: shmel-blog
+spec:
+  selector:
+    app: shmel-blog
+  ports:
+    - port: 80

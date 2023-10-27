@@ -1,0 +1,31 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shmel-blog
+  namespace: shmel-blog
+  labels:
+    app: shmel-blog
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+        app: shmel-blog
+  template:
+    metadata:
+      labels:
+        app: shmel-blog
+    spec:
+      containers:
+        - name: shmel-blog
+          image: 3ayazaya/shmel-blog:blowfish-theme 
+          imagePullPolicy: Always
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"         
+          ports:
+            - containerPort: 80
