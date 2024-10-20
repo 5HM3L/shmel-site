@@ -5,3 +5,4 @@ content/.DS_Store
 .hugo_build.lock
 public/
 tcardgen/
+themes/*
