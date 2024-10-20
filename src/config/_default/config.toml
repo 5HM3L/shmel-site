@@ -3,18 +3,34 @@ languageCode = "en-us"
 theme = "blowfish"
 title = "5HM3L SECURITY"
 enableRobotsTXT = true
-paginate = 20
 summaryLength = 30
 buildDrafts = false
 buildFuture = false
-[author]
-name = "z0yac"
-image = "img/toxic.png"
-headline = "I'm a Developer, Researcher, DevOps and CTF player!"
-bio = "Developer, Researcher, DevOps and CTF"
-links = [
-  { github = "https://github.com/3ayazaya" }
-]
+enableEmoji = true
+
+[params]
+  displayName = "English"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  logo = "img/shmel-logo.png"
+
+[params.author]
+  name = "5HM3L | security"
+  email = "5hm3l1337@gmail.com"
+  image = "img/shmel-logo.png"
+  headline = "This is a group of like-minded people and independent experts working for the benefit of society and aimed at ensuring information security."
+  bio = "This is a group of like-minded people and independent experts working for the benefit of society and aimed at ensuring information security. We are in no way tied to specific companies or government organizations. Participants perform audits, penetration testing, advise on information security issues, develop information security strategies, and also help with computer incidents."
+  links = [
+    { telegram = "https://t.me/shmelovod" },
+    { github = "https://github.com/5HM3L" },
+  ]
+
+[pagination]
+  pagerSize = 100
+
+[imaging]
+  anchor = 'Center'
 
 [sitemap]
   changefreq = 'always'

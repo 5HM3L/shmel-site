@@ -1,7 +1,8 @@
 ---
 title: "Docker and FireWall 🛡️"
 date: 2021-10-12T22:31:26+03:00
-author: z0yac
+showAuthor: false
+showAuthorsBadges : false 
 ogimage: "images/og/docker_fw.png"
 categories: 
 - sysadmin

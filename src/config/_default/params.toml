@@ -1,4 +1,4 @@
-colorScheme = "Fire"
+colorScheme = "Marvel"
 defaultAppearance = "dark"
 autoSwitchAppearance = true
 
@@ -7,12 +7,12 @@ enableCodeCopy = true
 
 disableImageOptimization = true
 
-defaultBackgroundImage = "img/hexagon.jpg" # used as default for background images 
+defaultBackgroundImage = "img/honeycomb.png" # used as default for background images 
 defaultFeaturedImage = "img/shmel-logo.png" # used as default for featured images in all articles
 
 
 [header]
-  layout = "fixed-fill-blur" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
+  layout = "fixed" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
 
 [footer]
   showMenu = true
@@ -23,21 +23,21 @@ defaultFeaturedImage = "img/shmel-logo.png" # used as default for featured image
 
 [homepage]
   layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "img/hexagon.jpg" # used in: hero, and card
+  homepageImage = "img/honeycomb.png" # used in: hero, and card
   showRecent = true
   showRecentItems = 12
   showMoreLink = true
-  showMoreLinkDest = "/posts"
+  showMoreLinkDest = "posts"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
   showDate = true
-  showViews = true
+  showViews = false
   showLikes = false
   showDateUpdated = true
-  showAuthor = true
+  showAuthor = false
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
@@ -59,7 +59,7 @@ defaultFeaturedImage = "img/shmel-logo.png" # used as default for featured image
   showAuthorsBadges = false
   showWordCount = true
   showSummary = true
-  # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  sharingLinks = ["telegram"]
 
 [list]
   showHero = true
@@ -83,7 +83,7 @@ defaultFeaturedImage = "img/shmel-logo.png" # used as default for featured image
 [taxonomy]
   showTermCount = true
   showHero = false
-  # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
+  heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   showBreadcrumbs = false
   showViews = false
   showLikes = false
